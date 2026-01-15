@@ -1,4 +1,4 @@
-package com.lukdt.user_service;
+package org.lukdt.user_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

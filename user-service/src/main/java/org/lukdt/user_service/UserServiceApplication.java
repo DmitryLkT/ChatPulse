@@ -1,13 +1,13 @@
-package com.lukdt.chat_pulse;
+package org.lukdt.user_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ChatPulseApplication {
+public class UserServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ChatPulseApplication.class, args);
+		SpringApplication.run(UserServiceApplication.class, args);
 	}
 
 }

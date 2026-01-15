@@ -1,10 +1,10 @@
-package com.lukdt.chat_pulse;
+package org.lukdt.chat_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ChatPulseApplicationTests {
+class ChatServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
