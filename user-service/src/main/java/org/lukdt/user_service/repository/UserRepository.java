@@ -1,7 +1,7 @@
 package org.lukdt.user_service.repository;
 
 import java.util.Optional;
-import org.lukdt.user_service.model.User;
+import org.lukdt.user_service.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
