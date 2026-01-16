@@ -31,4 +31,14 @@ public class GlobalExceptionHandler {
                 LocalDateTime.now()
         );
     }
+
+    @ExceptionHandler(InvalidCredentialsException.class)
+    @ResponseStatus(HttpStatus.UNAUTHORIZED)
+    public ApiError handlerInvalidCredentials(InvalidCredentialsException e) {
+        return new ApiError(
+                401,
+                e.getMessage(),
+                LocalDateTime.now()
+        );
+    }
 }
