@@ -32,6 +32,6 @@ public class User {
   private String password;
 
   @Enumerated(EnumType.STRING)
-  private org.lukdt.user_service.model.Role role;
+  private Role role;
 
 }
