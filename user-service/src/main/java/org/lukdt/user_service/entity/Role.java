@@ -1,4 +1,4 @@
-package org.lukdt.user_service.model;
+package org.lukdt.user_service.entity;
 
 public enum Role {
   USER, ADMIN

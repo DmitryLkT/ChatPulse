@@ -1,4 +1,4 @@
-package org.lukdt.user_service.model;
+package org.lukdt.user_service.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -32,6 +32,6 @@ public class User {
   private String password;
 
   @Enumerated(EnumType.STRING)
-  private Role role;
+  private org.lukdt.user_service.model.Role role;
 
 }
