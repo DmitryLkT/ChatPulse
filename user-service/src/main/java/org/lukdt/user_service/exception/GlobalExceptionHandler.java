@@ -21,4 +21,14 @@ public class GlobalExceptionHandler {
                 LocalDateTime.now()
         );
     }
+
+    @ExceptionHandler(UserNotAuthenticatedException.class)
+    @ResponseStatus(HttpStatus.UNAUTHORIZED)
+    public ApiError handlerUserNotAuthenticated(UserNotAuthenticatedException e) {
+        return new ApiError(
+                401,
+                e.getMessage(),
+                LocalDateTime.now()
+        );
+    }
 }
