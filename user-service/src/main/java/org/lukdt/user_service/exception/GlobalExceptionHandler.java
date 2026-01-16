@@ -22,11 +22,11 @@ public class GlobalExceptionHandler {
         );
     }
 
-    @ExceptionHandler(UserNotAuthenticatedException.class)
-    @ResponseStatus(HttpStatus.UNAUTHORIZED)
-    public ApiError handlerUserNotAuthenticated(UserNotAuthenticatedException e) {
+    @ExceptionHandler(UserNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ApiError handlerUserNotFound(UserNotFoundException e) {
         return new ApiError(
-                401,
+                404,
                 e.getMessage(),
                 LocalDateTime.now()
         );
