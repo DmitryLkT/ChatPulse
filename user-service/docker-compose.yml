@@ -1,0 +1,24 @@
+services:
+  app:
+    build: .
+    container_name: user_service
+    ports:
+      - "8090:8090"
+    depends_on:
+      - db
+    env_file:
+      - .env
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
